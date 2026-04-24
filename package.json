@@ -1,6 +1,6 @@
 {
   "name": "brea-did-vapi-bridge",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -16,7 +16,7 @@
   "devDependencies": {
     "typescript": "^5.4.0",
     "@types/node": "^20.0.0",
-    "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0"
+    "@types/react": "19.0.0",
+    "@types/react-dom": "19.0.0"
   }
 }
