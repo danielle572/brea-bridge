@@ -1,19 +1,15 @@
+'use client';
+
+import { VapiWidget } from "@vapi-ai/client-sdk-react";
+
 export default function Page() {
   return (
-    <main style={{ fontFamily: "ui-sans-serif", padding: 24, lineHeight: 1.5 }}>
-      <h1>BREA D‑ID ↔ Vapi Bridge</h1>
-      <p>
-        WebRTC offer endpoint:
-      </p>
-      <pre style={{ padding: 12, background: "#f5f5f5", borderRadius: 8 }}>
-        POST /api/did/webrtc/offer
-      </pre>
-      <p>
-        Health check:
-      </p>
-      <pre style={{ padding: 12, background: "#f5f5f5", borderRadius: 8 }}>
-        GET /api/health
-      </pre>
+    <main style={{ minHeight: '100vh', position: 'relative' }}>
+      <VapiWidget
+        publicKey="5a37ca99-e891-4c52-943a-feb27293dc64"
+        assistantId="7cb318a5-62e4-4c13-9c53-1af4cdf08848"
+        displayMode="compact" // This ensures she sits in the corner first!
+      />
     </main>
   );
 }
